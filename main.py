@@ -6,10 +6,10 @@ from embedding_handler import EmbeddingHandler
 
 def main():
     # Initialize handlers
-    excel_handler = ExcelHandler("excel_handler.py")
-    pinecone_handler = PineconeHandler("pinecone_handler.py")
-    github_handler = GithubHandler("github_handler.py")
-    embedding_handler = EmbeddingHandler("embedding_handler.py")
+    excel_handler = ExcelHandler()
+    pinecone_handler = PineconeHandler()
+    github_handler = GithubHandler()
+    embedding_handler = EmbeddingHandler()
 
     # Get current and previous Excel data
     current_data = excel_handler.get_excel_data()
