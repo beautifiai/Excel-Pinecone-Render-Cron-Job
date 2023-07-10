@@ -6,11 +6,10 @@ from embedding_handler import EmbeddingHandler
 
 def main():
     # Initialize handlers
-    excel_url = os.getenv('https://queensuca-my.sharepoint.com/:x:/g/personal/20lgf2_queensu_ca/ET4CJtYFqktOlCs24PdY4JsBc8EaLXoxD5VNSl1RRfx-mQ')
-    excel_handler = ExcelHandler(excel_url)
-    pinecone_handler = PineconeHandler()
-    github_handler = GithubHandler()
-    embedding_handler = EmbeddingHandler()
+    excel_handler = ExcelHandler("excel_handler.py")
+    pinecone_handler = PineconeHandler("pinecone_handler.py")
+    github_handler = GithubHandler("github_handler.py")
+    embedding_handler = EmbeddingHandler("embedding_handler.py")
 
     # Get current and previous Excel data
     current_data = excel_handler.get_excel_data()
