@@ -1,0 +1,7 @@
+openpyxl
+requests
+pandas
+numpy
+github
+pinecone-io
+openai
