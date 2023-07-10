@@ -2,6 +2,7 @@ openpyxl
 requests
 pandas
 numpy
-github
+PyGithub
 pinecone-io
 openai
+pinecone-client
