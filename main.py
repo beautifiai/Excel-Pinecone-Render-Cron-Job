@@ -6,7 +6,8 @@ from embedding_handler import EmbeddingHandler
 
 def main():
     # Initialize handlers
-    excel_handler = ExcelHandler()
+    excel_url = os.getenv('https://queensuca-my.sharepoint.com/:x:/g/personal/20lgf2_queensu_ca/ET4CJtYFqktOlCs24PdY4JsBc8EaLXoxD5VNSl1RRfx-mQ')
+    excel_handler = ExcelHandler(excel_url)
     pinecone_handler = PineconeHandler()
     github_handler = GithubHandler()
     embedding_handler = EmbeddingHandler()
