@@ -1,0 +1,13 @@
+services:
+  - type: cron
+    name: excel-scraper
+    cronSpec: '0 0 * * 0'
+    command: 'python main.py'
+    envVars:
+      - key: OPENAI_KEY
+        value: YOUR_OPENAI_KEY
+      - key: PINECONE_KEY
+        value: YOUR_PINECONE_KEY
+      - key: GITHUB_TOKEN
+        value: YOUR_GITHUB_TOKEN
+    buildCommand: 'pip install -r requirements.txt'
