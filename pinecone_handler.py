@@ -14,7 +14,4 @@ class PineconeHandler:
     def remove_document(self, namespace):
         self.index.delete(items=[namespace])
 
-    def __del__(self):
-        pinecone.deinit()  # this line is not necessary and can be removed
-
 
