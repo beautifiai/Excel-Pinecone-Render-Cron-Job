@@ -1,5 +1,4 @@
 import pinecone
-import os
 
 class PineconeHandler:
     def __init__(self, pinecone_key):
@@ -18,3 +17,4 @@ class PineconeHandler:
 
     def __del__(self):
         pinecone.deinit()
+
