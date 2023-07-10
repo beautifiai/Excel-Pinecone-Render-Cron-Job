@@ -2,7 +2,6 @@ import pinecone
 
 class PineconeHandler:
     def __init__(self, pinecone_key):
-        pinecone.deinit()
         pinecone.init(api_key=pinecone_key)
         self.index_name = "my-vector-index"
         if self.index_name not in pinecone.list_indexes():
@@ -16,5 +15,6 @@ class PineconeHandler:
         self.index.delete(items=[namespace])
 
     def __del__(self):
-        pinecone.deinit()
+        pinecone.deinit()  # this line is not necessary and can be removed
+
 
