@@ -6,3 +6,4 @@ PyGithub
 pinecone-io
 openai
 pinecone-client
+scikit-learn
